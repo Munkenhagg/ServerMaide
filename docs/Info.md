@@ -22,13 +22,14 @@ It automates everything: choosing server type, installing mods/plugins, and opti
 ---
 
 ## **Why Use This Instead of Other Hosts**
-| Feature | Your Scripts | Aternos | Minehut | Apex |
+| Feature | ServerMaide | Aternos | Minehut | Apex |
 |---------|------------|---------|--------|------|
 | Full control | ✅ You choose versions, plugins, mods | ⚠️ Limited by UI | ⚠️ Limited | ✅ Paid |
 | Mods & plugins | ✅ Any Paper/Fabric compatible | ⚠️ Some limits | ⚠️ Some limits | ✅ Paid |
-| Bedrock support | ✅ Optional Geyser/Floodgate | ✅ Supports Bedrock via Geyser | ❌ | ✅ Paid |
+| Bedrock support | ✅ Optional Geyser/Floodgate | ✅ Supports Bedrock via Geyser | ❌ | ✅ |
 | Performance | ✅ Depends on your hardware | ❌ Shared | ❌ Shared | ✅ Paid |
 | Automation | ✅ Fully automated setup | ⚠️ Manual downloads sometimes | ❌ | Limited |
+| Cross-Platform | ❌ going to be added in the future | ✅ | ✅ | ✅ |
 
 > ⚠️ “Limited” means the host restricts versions, plugins, or mods in some way.  
 
