@@ -1,29 +1,71 @@
 # Troubleshooting
 
-## Common issues
+## Common Issues
 
 ### Dependencies
 
-- **serverMaide** is dependant on **openjdk-17+**, **Any Unix shell** and **wget**. function will be very limitied to zero without these packages
+- **serverMaide** depends on **openjdk-17+**, **any Unix shell**, and **wget**. Functionality will be extremely limited without these packages.
 
 ---
 
 ### Weird Configurations
 
-- your server can **lose functionality** or be **unable to generate** if you have an unstable configuration. things that are likely to be the cause are **sandboxed environments**, **broken functions/aliases** or **outdated dependencies**
+- Your server can lose functionality or fail to generate if your environment is unstable. Common causes include **sandboxed environments**, **broken functions/aliases**, or **outdated dependencies**.
 
 ---
 
-### permissions
+### Permissions
 
-- most of the provided scripts and directories are dependant of **read, execute, and write** permissions
+- Most provided scripts and directories require proper **read, write, and execute** permissions.
 
-- on a regular linux system fixing permissions should be as easy as **chmod -R 744 .** which recursively changes all the files permissions in the **current** directory to **-rwxr--r--.** or **drwxr--r--.** if it is a **directory**
+- On a typical Linux system, fixing permissions can be as simple as:
+
+  ```bash
+  chmod -R 744 .
+  ```
+
+  This sets files to `-rwxr--r--` and directories to `drwxr--r--`. (Note: directories usually need `x` to be usable.)
 
 ---
 
-### Wrong arguments
+### Wrong Arguments
 
-- incorrect arguments can cause trouble when dealing with your server. common mistakes can be allocating **too little RAM**, which results in lag, or a crash. Which can be handled by adding the arg **-Xmx4G** and changing 4 to however much memory you are willing to allocate to your server.
+- Incorrect arguments can cause lag or crashes. A common issue is allocating too little RAM. You can fix this by adding:
 
-- another newbie mistake involving arguments can be forgetting to specify a -jar and running something like **java -Xmx1G paper.jar**
+  ```
+  -Xmx4G
+  ```
+
+  Replace **4** with the amount of memory you want to allocate.
+
+- Another common mistake is forgetting the `-jar` flag and running something like:
+
+  ```bash
+  java -Xmx1G paper.jar
+  ```
+
+---
+
+## Playit
+
+#### Playit Limitations
+
+- Some broadband providers block Playit's API. This can cause errors like:
+
+  ```
+  Error: ClientError(RequestError(reqwest::Error {
+    kind: Request,
+    url: "https://api.playit.gg/claim/setup",
+    source: hyper_util::client::legacy::Error(
+      Connect,
+      ConnectError("dns error", Custom {
+        kind: Uncategorized,
+        error: "failed to lookup address information: Try again"
+      })
+    )
+  }))
+  ```
+
+  This is often not fixable unless you switch networks.
+
+- You must have an internet connection to use Playit.
