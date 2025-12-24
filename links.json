@@ -1,0 +1,12 @@
+{
+  "paper": {
+  	"main": "https://fill-data.papermc.io/v1/objects/0ae4b1c6a82e08704dbe34f67880b970fe07f3a036c33c3e59a1ec06f4825def/paper-1.21.11-53.jar",
+  	"geyser": "https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/spigot",
+  	"floodgate": "https://download.geysermc.org/v2/projects/floodgate/versions/latest/builds/latest/downloads/spigot"
+  },
+  "fabric": {
+  	"main": "https://meta.fabricmc.net/v2/versions/loader/1.21.11/0.18.3/1.1.0/server/jar",
+	"geyser": "https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/fabric",
+	"floodgate": "https://cdn.modrinth.com/data/bWrNNfkb/versions/wzwExuYr/Floodgate-Fabric-2.2.6-b54.jar"
+  }
+}
