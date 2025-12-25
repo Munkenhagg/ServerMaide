@@ -17,13 +17,13 @@ echo -en "Please choose the server root: "
 read root
 wget "$main" -O "$root/$servertype.jar"
 if [ "$geyseryn" = "y" ]; then
-	local mod
+	local M
 	case servertype in
-		paper) mod=plugins ;;
-		fabric) mod=mods ;;
+		paper) M=plugins ;;
+		fabric) M=mods ;;
 	esac
-	wget "$geyser" -O "$root/$mod/Geyser-${servertype}.jar"
-	wget "$floodgate" -O "$root/$mod/Floodgate-${servertype}.jar"
+	wget "$geyser" -O "$root/$M/Geyser-${servertype}.jar"
+	wget "$floodgate" -O "$root/$M/Floodgate-${servertype}.jar"
 fi
 
 echo "Done installing server."
