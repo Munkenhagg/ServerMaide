@@ -1,12 +1,12 @@
 {
   "paper": {
-  	"main": "https://fill-data.papermc.io/v1/objects/0ae4b1c6a82e08704dbe34f67880b970fe07f3a036c33c3e59a1ec06f4825def/paper-1.21.11-53.jar",
+  	"main": "https://fill-data.papermc.io/v1/objects/43d08ed52c7af4e9f72769122501a5c15f99c7ace0c428a3eef040fd3f6fdbc5/paper-26.1.1-29.jar",
   	"geyser": "https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/spigot",
   	"floodgate": "https://download.geysermc.org/v2/projects/floodgate/versions/latest/builds/latest/downloads/spigot"
   },
   "fabric": {
-  	"main": "https://meta.fabricmc.net/v2/versions/loader/1.21.11/0.18.3/1.1.0/server/jar",
+  	"main": "https://maven.fabricmc.net/net/fabricmc/fabric-installer/1.1.1/fabric-installer-1.1.1.jar",
 	"geyser": "https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/fabric",
-	"floodgate": "https://cdn.modrinth.com/data/bWrNNfkb/versions/wzwExuYr/Floodgate-Fabric-2.2.6-b54.jar"
+	"floodgate": "UNSUPPORTED"
   }
 }

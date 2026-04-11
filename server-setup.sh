@@ -7,6 +7,7 @@ if [ ! "$servertype" = "paper" ] && [ ! "$servertype" = "fabric" ]; then
 	echo "Not a valid server!"
 	exit 1
 fi
+echo "Warning: floodgate is outdated for fabric. latest : 1.21.11"
 D="$(cd "$(dirname "$0")" && pwd)"
 main="$(jq -r ".${servertype}.main" $D/links.json)"
 if [ "$geyseryn" = "y" ]; then
